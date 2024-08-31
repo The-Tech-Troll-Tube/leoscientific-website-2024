@@ -10,7 +10,7 @@ const config = {
   tagline: 'The Product Expert!',
    // url: 'https://saji-leoscientific.github.io/',
   url: 'https://www.leoscientific.in',
-  baseUrl: '/',
+  baseUrl: '/'
   // baseUrl: '/saji-leoscientific-website/'
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
