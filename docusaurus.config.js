@@ -9,7 +9,7 @@ const config = {
   title: 'Leo Scientific',
   tagline: 'The Product Expert!',
    // url: 'https://saji-leoscientific.github.io/',
-  url: 'https://leoscientific.in/',
+  url: 'https://www.leoscientific.in',
   baseUrl: '/',
   // baseUrl: '/saji-leoscientific-website/'
   onBrokenLinks: 'warn',
