@@ -1,0 +1,2 @@
+initial cicd process has some issues need to fix it:-
+gh-pages should contain only the final build foler contents only..
