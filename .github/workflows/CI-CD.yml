@@ -1,89 +1,31 @@
-# name: CI/CD Auto-Deploy @ Saji-LeoScientific
-
-# on:
-#   # Trigger the workflow on push to the main branch
-#   push:
-#     branches:
-#       - main
-
-# jobs:
-#   build:
-#     runs-on: windows-2019
-#     strategy:
-#       matrix:
-#         node-version: [18.x]
-#     steps:
-#     - uses: actions/checkout@v1
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v1
-#       with:
-#         node-version: ${{ matrix.node-version }}
-
-#     - name: Installation
-#       run: yarn
-
-#     - name: Docusaurus 2 Building Process
-#       run: yarn build
-
-#     # New step to create CNAME file for custom domain
-#     - name: Set up custom domain
-#       run: echo 'www.leoscientific.in' > ./build/CNAME
-
-#     - name: Deploy
-#       uses: peaceiris/actions-gh-pages@v3
-#       with:
-#         github_token: ${{ secrets.GITHUB_TOKEN }}
-#         publish_dir: ./build/  # Correct directory for the built files
-
-
-name: CI/CD Auto-Deploy @ Saji-LeoScientific
+name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
   push:
     branches:
-      - main
+      - main  # or the branch you are deploying from
 
 jobs:
-  build:
-    runs-on: windows-2019
-    strategy:
-      matrix:
-        node-version: [18.x]
+  deploy:
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
-        
-        ###################################### LAST 
-            
-#     - name: Latest Version of Docusaurus Installation  !!
-#       run:  yarn add @docusaurus/core@latest @docusaurus/preset-classic@latest
-      
-        ######################################
-      
-    - name: Installation
-      run: yarn
+        node-version: '16'  # or your project's required Node.js version
 
-#       run: npm i
+    - name: Install dependencies
+      run: yarn add all
 
-        ###################################### LAST
+    - name: Build
+      run: npm yarn build  # or your build command, e.g., 'yarn build'
 
-#     - name: Check and Update Packages !!
-#       run: yarn upgrade
-      
-      ######################################
-      
-    - name: Docusaurus 2 Building Process
-      run: yarn build
-
-#       run: npm run build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # publish_dir: ./www.leoscientific.in/build
-        publish_dir: ./build/
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build  # or your build directory
