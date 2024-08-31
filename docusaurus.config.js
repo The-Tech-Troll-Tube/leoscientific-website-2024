@@ -8,7 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Leo Scientific',
   tagline: 'The Product Expert!',
-  url: 'https://saji-leoscientific.github.io/',
+   // url: 'https://saji-leoscientific.github.io/',
+  url: 'https://leoscientific.in/',
   baseUrl: '/',
   // baseUrl: '/saji-leoscientific-website/'
   onBrokenLinks: 'warn',
