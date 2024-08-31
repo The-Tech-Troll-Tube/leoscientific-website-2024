@@ -1,0 +1,29 @@
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+    /* height: 350px; */
+    height: 600px;
+
+    /* overflow: hidden; */
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /* border-radius: 10px; */
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    /* font-size: 20px; */
+    font-size: 40px;
+    font-weight: bold;
+    color: #505050;
+    background: transparent;
+    text-align: center;
+  }
+
+
+  
+
