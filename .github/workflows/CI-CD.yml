@@ -22,7 +22,7 @@ jobs:
       run: yarn add all
 
     - name: Build
-      run: npm yarn build  # or your build command, e.g., 'yarn build'
+      run: yarn build  # or your build command, e.g., 'yarn build'
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
