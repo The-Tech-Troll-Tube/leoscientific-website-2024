@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkleo_scientific_website=self.webpackChunkleo_scientific_website||[]).push([[9647],{7121:(e,s,c)=>{c.r(s),c.d(s,{default:()=>l});c(6540);var i=c(8215),r=c(1213),t=c(7559),n=c(2831),u=c(781),a=c(4848);function l(e){return(0,a.jsx)(r.e3,{className:(0,i.A)(t.G.wrapper.docsPages),children:(0,a.jsx)(u.A,{children:(0,n.v)(e.route.routes)})})}}}]);
