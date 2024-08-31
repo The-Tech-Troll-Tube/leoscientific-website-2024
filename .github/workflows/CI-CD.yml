@@ -1,0 +1,36 @@
+name: CI/CD Auto-Deploy @ Saji-LeoScientific
+
+on:
+  # Trigger the workflow on push to the main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-2019
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Installation
+      run: yarn
+
+    - name: Docusaurus 2 Building Process
+      run: yarn build
+
+    # New step to create CNAME file for custom domain
+    - name: Set up custom domain
+      run: echo 'www.leoscientific.in' > ./build/CNAME
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build/  # Correct directory for the built files
