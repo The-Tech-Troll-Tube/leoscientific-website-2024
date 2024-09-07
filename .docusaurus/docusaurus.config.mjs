@@ -81,58 +81,58 @@ export default {
             }
           ]
         },
-        {
-          "href": "https://leoscientific.in/",
-          "label": "Our-Other-Page",
-          "position": "right"
-        }
+        // {
+        //   "href": "https://leoscientific.in/",
+        //   "label": "Our-Other-Page",
+        //   "position": "right"
+        // }
       ],
       "hideOnScroll": false
     },
     "footer": {
       "style": "dark",
       "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
-            }
-          ]
-        }
+        // {
+        //   "title": "Docs",
+        //   "items": [
+        //     {
+        //       "label": "Tutorial",
+        //       "to": "/docs/intro"
+        //     }
+        //   ]
+        // },
+        // {
+        //   "title": "Community",
+        //   "items": [
+        //     {
+        //       "label": "Stack Overflow",
+        //       "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+        //     },
+        //     {
+        //       "label": "Discord",
+        //       "href": "https://discordapp.com/invite/docusaurus"
+        //     },
+        //     {
+        //       "label": "Twitter",
+        //       "href": "https://twitter.com/docusaurus"
+        //     }
+        //   ]
+        // },
+        // {
+        //   "title": "More",
+        //   "items": [
+        //     {
+        //       "label": "Blog",
+        //       "to": "/blog"
+        //     },
+        //     {
+        //       "label": "GitHub",
+        //       "href": "https://github.com/facebook/docusaurus"
+        //     }
+        //   ]
+        // }
       ],
-      "copyright": "Copyright © 2024 My Project, Inc. Built with Docusaurus."
+      "copyright": `Copyright © ${new Date().getFullYear()} Leo Scientific, Inc.`
     },
     "prism": {
       "theme": {

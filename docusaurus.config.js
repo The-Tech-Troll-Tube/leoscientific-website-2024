@@ -111,11 +111,11 @@ const config = {
           ],
         },
         /////////////////////DROPDOWN///////////////////
-        {
-          href: 'https://leoscientific.in/',
-          label: 'Our-Other-Page',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://leoscientific.in/',
+        //   label: 'Our-Other-Page',
+        //   position: 'right',
+        // },
         // {
         //   type: 'doc',
         //   docId: 'intro',
@@ -173,7 +173,7 @@ const config = {
           ],
         },
       ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} LeoScientific, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
