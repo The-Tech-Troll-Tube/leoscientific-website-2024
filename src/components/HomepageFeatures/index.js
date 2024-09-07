@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/technology.svg').default,
     description: (
       <>
-        Our state-of-the-art picking help decide the best.
+        Our state-of-the-art collection always hands with the best.
       </>
     ),
   },
