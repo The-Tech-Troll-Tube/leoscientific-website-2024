@@ -1,0 +1,27 @@
+{
+  "id": "About The Company",
+  "title": "About The Company",
+  "description": "<ThemedImage",
+  "source": "@site/docs/About The Company.md",
+  "sourceDirName": ".",
+  "slug": "/About The Company",
+  "permalink": "/docs/About The Company",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/About The Company.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Products Introduction",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/tutorial-basics/create-a-page"
+  }
+}
