@@ -19,7 +19,7 @@ jobs:
         node-version: '18'  # or your project's required Node.js version
 
     - name: Install dependencies
-      run: yarn add all
+      run: yarn
 
     - name: Build
       run: yarn build  # or your build command, e.g., 'yarn build'
