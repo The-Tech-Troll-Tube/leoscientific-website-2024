@@ -1,0 +1,23 @@
+{
+  "id": "Innovation/innovation",
+  "title": "Our Commitment to Excellence",
+  "description": "Innovating the Future of Science: Leo Scientific's Commitment to Excellence",
+  "source": "@site/docs/Innovation/innovation.md",
+  "sourceDirName": "Innovation",
+  "slug": "/Innovation/",
+  "permalink": "/docs/Innovation/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Innovation/innovation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Our Products",
+    "permalink": "/docs/Products/"
+  }
+}

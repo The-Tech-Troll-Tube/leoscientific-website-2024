@@ -104,15 +104,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '8a8'),
+    component: ComponentCreator('/docs', 'e52'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b7c'),
+        component: ComponentCreator('/docs', 'ba0'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'a35'),
+            component: ComponentCreator('/docs', 'aae'),
             routes: [
               {
                 path: '/docs/About The Company',
@@ -123,6 +123,12 @@ export default [
               {
                 path: '/docs/Contact Details',
                 component: ComponentCreator('/docs/Contact Details', '761'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Innovation/',
+                component: ComponentCreator('/docs/Innovation/', '18e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

@@ -28,27 +28,27 @@ const Slideshow = () => {
         <Slide easing="ease" {...slideProperties}>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${SliderData[0]})`}}>
-              <span  >Slide 1</span>
+              {/* <span  >Slide 1</span> */}
             </div>
           </div>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${SliderData[1]})`}}>
-              <span>Slide 2</span>
+              {/* <span>Slide 2</span> */}
             </div>
           </div>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${SliderData[2]})`}}>
-              <span>Slide 3</span>
+              {/* <span>Slide 3</span> */}
             </div>
           </div>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${SliderData[3]})`}}>
-              <span>Slide 4</span>
+              {/* <span>Slide 4</span> */}
             </div>
           </div>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${SliderData[4]})`}}>
-              <span>Slide 5</span>
+              {/* <span>Slide 5</span> */}
             </div>
           </div>
           {/* <div className="each-slide">
